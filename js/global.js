@@ -24,15 +24,21 @@ document.addEventListener('DOMContentLoaded', function () {
 // 컴포넌트 로드 함수
 async function loadComponents() {
     const includes = document.getElementsByTagName('include');
-    const repoName = '/ddasaroomtest'; // 깃허브 리포지토리 이름 (필요시 수정)
+    const repoName = '/ddasaroomtest'; // 깃허브 리포지토리 이름
     
-    for (let i = 0; i < includes.length; i++) {
-        const element = includes[i];
+    // HTMLCollection을 배열로 변환 (실시간 변경 방지)
+    const includesArray = Array.from(includes);
+    
+    for (const element of includesArray) {
         let file = element.getAttribute('src');
         
         // 깃허브 Pages 환경인 경우 경로 수정
         if (window.location.hostname.includes('github.io')) {
-            // 이미 절대 경로로 시작하는 경우
+            // 상대 경로를 절대 경로로 변환
+            if (file.startsWith('./')) {
+                file = file.substring(1); // ./를 제거
+            }
+            // 절대 경로인 경우
             if (file.startsWith('/')) {
                 file = repoName + file;
             }
@@ -43,12 +49,11 @@ async function loadComponents() {
             if (!response.ok) throw new Error(`HTTP 오류: ${response.status}`);
             
             const html = await response.text();
-            element.insertAdjacentHTML('afterend', html);
-            element.remove();
+            // 안전하게 교체
+            element.outerHTML = html;
         } catch (error) {
             console.error('컴포넌트 로드 실패:', file, error);
-            element.insertAdjacentHTML('afterend', `<div class="error">컴포넌트 로드 실패: ${file}</div>`);
-            element.remove();
+            element.outerHTML = `<div class="error">컴포넌트 로드 실패: ${file}</div>`;
         }
     }
 
