@@ -36,11 +36,13 @@ async function loadComponents() {
         if (window.location.hostname.includes('github.io')) {
             // 상대 경로를 절대 경로로 변환
             if (file.startsWith('./')) {
-                file = file.substring(1); // ./를 제거
-            }
-            // 절대 경로인 경우
-            if (file.startsWith('/')) {
+                file = repoName + file.substring(2); // './'를 제거하고 리포지토리 이름 추가
+            } else if (file.startsWith('/')) {
+                // 이미 절대 경로인 경우
                 file = repoName + file;
+            } else {
+                // 상대 경로이면서 ./로 시작하지 않는 경우
+                file = repoName + '/' + file;
             }
         }
         
