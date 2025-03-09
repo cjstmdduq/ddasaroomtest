@@ -49,7 +49,6 @@ async function loadComponents() {
             if (!response.ok) throw new Error(`HTTP 오류: ${response.status}`);
             
             const html = await response.text();
-            // 안전하게 교체
             element.outerHTML = html;
         } catch (error) {
             console.error('컴포넌트 로드 실패:', file, error);
