@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>따사룸</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/review.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/floating-banner.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="review-section">
+            <div class="section-title-area">
+                <h2 class="section-title">시공 후기</h2>
+                <p class="section-subtitle">다른 고객님들의 시공 후기를 확인해보세요.</p>
+            </div>
+            <div class="review-container">
+                <div id="reviewGrid" class="review-grid">
+                    <!-- 리뷰 카드가 여기에 동적으로 추가됩니다 -->
+                </div>
+                <div class="pagination">
+                    <button class="pagination-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="pagination-numbers">
+                        <!-- 페이지 번호가 여기에 동적으로 추가됩니다 -->
+                    </div>
+                    <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <include src="../../components/nav.html"></include>
+    <include src="../../components/footer.html"></include>
+    <include src="../../components/floating-banner.html"></include>
+    <script src="../../js/global.js"></script>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/review.js"></script>
+</body>
+
+</html>

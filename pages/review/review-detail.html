@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>따사룸 - 시공후기</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/review-detail.css">
+    <link rel="stylesheet" href="../../../css/global.css">
+    <link rel="stylesheet" href="../../../css/nav.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/floating-banner.css">
+    <link rel="stylesheet" href="../../../css/review-slider.css">
+    <link rel="stylesheet" href="../../../css/comparison-slider.css">
+</head>
+
+<body>
+    <main class="review-detail">
+        <!-- 후기 제목 영역 -->
+        <header class="review-header">
+            <div class="review-detail-title"></div>
+        </header>
+
+        <!-- 현장 포인트 테이블 -->
+        <section class="site-info">
+            <h2>현장 정보</h2>
+            <table class="info-table"></table>
+        </section>
+
+        <!-- 고객 요청사항 -->
+        <section class="customer-requests">
+            <h2>고객 요청사항</h2>
+            <ul class="request-list"></ul>
+        </section>
+
+        <!-- 비포 애프터 영역 -->
+        <section class="before-after">
+            <h2>시공 전/후</h2>
+            <div class="comparison-slider">
+                <figure class="before-container">
+                    <img src="" alt="시공 전 이미지">
+                    <figcaption>Before</figcaption>
+                </figure>
+                <div class="slider-handle">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <figure class="after-container">
+                    <img src="" alt="시공 후 이미지">
+                    <figcaption>After</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 상세 시공 과정 -->
+        <section class="construction-process">
+            <h2>시공 과정</h2>
+            <div class="process-gallery"></div>
+        </section>
+
+        <!-- 후기 본문 -->
+        <section class="review-content">
+            <h2>상세 후기</h2>
+            <div class="content-editor"></div>
+        </section>
+
+        <!-- 추천 평가 -->
+        <section class="review-rating">
+            <h2>시공 만족도</h2>
+            <div class="rating-items">
+                <div class="rating-item">
+                    <span class="label">디자인</span>
+                    <div class="stars"></div>
+                </div>
+                <div class="rating-item">
+                    <span class="label">시공품질</span>
+                    <div class="stars"></div>
+                </div>
+                <div class="rating-item">
+                    <span class="label">서비스</span>
+                    <div class="stars"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-reviews">
+            <review-slider></review-slider>
+        </section>
+    </main>
+
+    <include src="../../../components/nav.html"></include>
+    <include src="../../../components/footer.html"></include>
+    <include src="../../../components/floating-banner.html"></include>
+    
+    <script src="../../../js/global.js"></script>
+    <script src="../../../js/nav.js"></script>
+    <script src="../../../js/review-detail.js"></script>
+    <script src="../../../js/ReviewSlider.js"></script>
+
+</body>
+
+</html>

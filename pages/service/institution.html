@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시공 절차 - 따사룸</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+    <link rel="stylesheet" href="../../css/institution.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/floating-banner.css">
+</head>
+
+<body>
+    <include src="../../components/nav.html"></include>
+    <section class="network-section">
+        <div class="network-container">
+            <div class="network-info">
+                <h2 class="network-title">넓은 면적일수록<br>커지는 혜택!</h2>
+                <p class="network-subtitle">시설/기관 전문 시공은 따사룸에서!<br>합리적인 가격으로 시공해드립니다</p>
+                <ul class="regions">
+                    <li class="region-item">유치원 / 어린이집</li>
+                    <li class="region-item">초등학교 / 특수학교</li>
+                    <li class="region-item">중학교 / 고등학교</li>
+                    <li class="region-item">학원 / 교습소</li>
+                    <li class="region-item">도서관 / 독서실</li>
+                    <li class="region-item">기타 교육시설</li>
+                </ul>
+            </div>
+            <div class="inquiry-form">
+                <h3 class="inquiry-title">시공 문의하기(기관)</h3>
+                <form id="institutionForm" enctype="multipart/form-data">
+                    <div class="contact-buttons">
+                        <a href="tel:16007417" class="contact-button phone">
+                            <i class="fas fa-phone"></i> 대표번호 1600-7417
+                        </a>
+                        <a href="https://talk.naver.com/WC8A2I" target="_blank" class="contact-button talk">
+                            <i class="fas fa-comments"></i> 톡톡상담
+                        </a>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution">기관명</label>
+                        <input type="text" id="institution" name="institution" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="manager">담당자명</label>
+                            <input type="text" id="manager" name="manager" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="region">지역</label>
+                        <select id="region" name="region" required>
+                            <option value="">지역을 선택해주세요</option>
+                            <optgroup label="수도권">
+                                <option value="서울특별시">서울특별시</option>
+                                <option value="경기도">경기도</option>
+                                <option value="인천광역시">인천광역시</option>
+                            </optgroup>
+                            <optgroup label="영남권">
+                                <option value="부산광역시">부산광역시</option>
+                                <option value="울산광역시">울산광역시</option>
+                                <option value="경상남도">경상남도</option>
+                                <option value="대구광역시">대구광역시</option>
+                                <option value="경상북도">경상북도</option>
+                            </optgroup>
+                            <optgroup label="호남권">
+                                <option value="광주광역시">광주광역시</option>
+                                <option value="전라남도">전라남도</option>
+                                <option value="전라북도">전라북도</option>
+                            </optgroup>
+                            <optgroup label="충청권">
+                                <option value="대전광역시">대전광역시</option>
+                                <option value="충청남도">충청남도</option>
+                                <option value="충청북도">충청북도</option>
+                                <option value="세종특별자치시">세종특별자치시</option>
+                            </optgroup>
+                            <optgroup label="그 외 지역">
+                                <option value="강원특별자치도">강원특별자치도</option>
+                                <option value="제주특별자치도">제주특별자치도</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="area">시공 희망 면적</label>
+                            <input type="text" id="area" name="area" placeholder="예: 100평" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="blueprint">도면 업로드</label>
+                            <input type="file" id="blueprint" name="blueprint" accept=".pdf,.jpg,.jpeg,.png">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">시공 주소</label>
+                        <input type="text" id="address" name="address" placeholder="주소" required>
+                        <input type="text" id="address_detail" name="address_detail" placeholder="상세주소" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">기타 문의 사항</label>
+                        <textarea id="details" name="details" placeholder="용도 및 기타 참고사항을 입력해주세요" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group privacy-agreement">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">(필수) 개인정보 수집 및 이용에 동의합니다</label>
+                    </div>
+
+                    <button type="submit" class="submit-button">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <include src="../../components/footer.html"></include>
+    <include src="../../components/floating-banner.html"></include>
+    <script src="../../js/global.js"></script>
+    <script src="../../js/nav.js"></script>
+</body>
+
+</html>

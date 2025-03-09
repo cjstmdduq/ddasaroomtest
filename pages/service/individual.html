@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시공 절차 - 따사룸</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/individual.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/floating-banner.css">
+</head>
+
+<body>
+    <include src="../../components/nav.html"></include>
+    <section class="network-section">
+        <div class="network-container">
+            <div class="network-info">
+                <h2 class="network-title">전국으로 펼쳐진<br>따사룸 네트워크</h2>
+                <p class="network-subtitle">대한민국 어디든 시공 가능한<br>따사룸의 네트워크를 소개합니다</p>
+                <ul class="regions">
+                    <li class="region-item">서울 / 경기 / 인천</li>
+                    <li class="region-item">부산 / 울산 / 경남</li>
+                    <li class="region-item">대구 / 경북</li>
+                    <li class="region-item">광주 / 전남 / 전북</li>
+                    <li class="region-item">대전 / 충남 / 충북</li>
+                    <li class="region-item">강원 / 제주</li>
+                </ul>
+            </div>
+            <div class="inquiry-form">
+                <h3 class="inquiry-title">시공 문의하기(개인)</h3>
+                <form id="constructionForm">
+                    <div class="contact-buttons">
+                        <a href="tel:16007417" class="contact-button phone">
+                            <i class="fas fa-phone"></i> 대표번호 1600-7417
+                        </a>
+                        <a href="https://talk.naver.com/WC8A2I" target="_blank" class="contact-button talk">
+                            <i class="fas fa-comments"></i> 톡톡상담
+                        </a>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">성함</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="region">지역</label>
+                        <select id="region" name="region" required>
+                            <option value="">지역을 선택해주세요</option>
+                            <optgroup label="수도권">
+                                <option value="서울특별시">서울특별시</option>
+                                <option value="경기도">경기도</option>
+                                <option value="인천광역시">인천광역시</option>
+                            </optgroup>
+                            <optgroup label="영남권">
+                                <option value="부산광역시">부산광역시</option>
+                                <option value="울산광역시">울산광역시</option>
+                                <option value="경상남도">경상남도</option>
+                                <option value="대구광역시">대구광역시</option>
+                                <option value="경상북도">경상북도</option>
+                            </optgroup>
+                            <optgroup label="호남권">
+                                <option value="광주광역시">광주광역시</option>
+                                <option value="전라남도">전라남도</option>
+                                <option value="전라북도">전라북도</option>
+                            </optgroup>
+                            <optgroup label="충청권">
+                                <option value="대전광역시">대전광역시</option>
+                                <option value="충청남도">충청남도</option>
+                                <option value="충청북도">충청북도</option>
+                                <option value="세종특별자치시">세종특별자치시</option>
+                            </optgroup>
+                            <optgroup label="그 외 지역">
+                                <option value="강원특별자치도">강원특별자치도</option>
+                                <option value="제주특별자치도">제주특별자치도</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="size">평형</label>
+                            <input type="text" id="size" name="size" placeholder="예: 24평" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="balcony">발코니 확장여부</label>
+                            <select id="balcony" name="balcony" required>
+                                <option value="">선택해주세요</option>
+                                <option value="확장">확장</option>
+                                <option value="미확장">미확장</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">설치하실 장소</label>
+                        <input type="text" id="location" name="location" placeholder="예: 거실, 주방" required>
+                    </div>
+
+                    <div class="form-group privacy-agreement">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">(필수) 개인정보 수집 및 이용에 동의합니다</label>
+                    </div>
+
+                    <button type="submit" class="submit-button">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <include src="../../components/footer.html"></include>
+    <include src="../../components/floating-banner.html"></include>
+    <script src="../../js/global.js"></script>
+    <script src="../../js/nav.js"></script>
+</body>
+
+</html>
