@@ -1,0 +1,65 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+    --beige-100: #F5F5DC;
+    --beige-200: #E8E4D9;
+    --white-100: #FFFFFF;
+    --white-200: #F8F9FA;
+    --blue-100: #E7F5FF;
+    --blue-200: #339AF0;
+    --gray-100: #F8F9FA;
+    --gray-200: #343A40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: var(--gray-200);
+    background-color: var(--white-100);
+    padding-top: 80px;  
+}
+
+/* 섹션 타이틀 스타일 */
+.section-title-area {
+    text-align: left;
+    width: 1200px;
+    margin: 3rem auto 0;
+    border-bottom: 1px solid var(--beige-200);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gray-200);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--gray-200);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .section-title-area {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+}

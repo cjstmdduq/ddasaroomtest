@@ -1,0 +1,506 @@
+{
+    "coment": "review와 리뷰디테일 페이지의 데이터를 관리하는 JSON파일",
+    "reviews": [
+      {
+        "id": 1,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail1.webp",
+        "title": "집안이 환해졌어요",
+        "siteInfo": {
+          "design": "화이트 마블",
+          "size": "33평",
+          "location": "거실+복도+주방+아이방",
+          "area": "서울 강남구"
+        },
+        "customerRequests": [
+          "화이트 톤으로 집안을 환하게 만들고 싶어요",
+          "아이들이 안전하게 뛰어놀 수 있었으면 좋겠어요",
+          "청소가 쉽고 관리가 편했으면 좋겠어요",
+          "기존 인테리어와 잘 어울렸으면 좋겠어요"
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review1/1.webp",
+          "after": "../../../images/reviews/review1/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review1/3.webp",
+            "caption": "1. 디테일 작업 사진"
+          },
+          {
+            "image": "../../../images/reviews/review1/4.webp",
+            "caption": "2. 디테일 작업 사진"
+          },
+          {
+            "image": "../../../images/reviews/review1/5.webp",
+            "caption": "3. 디테일 작업 사진 "
+          },
+          {
+            "image": "../../../images/reviews/review1/6.webp",
+            "caption": "4. 디테일 작업 사진"
+          }
+        ],
+        "reviewContent": {
+          "reason": "아이가 있는 집이라 바닥재 선택이 매우 중요했습니다. 여러 업체를 알아보던 중 따사룸의 TPU 바닥재가 눈에 띄었고, 특히 안전인증과 충격흡수율 테스트 결과가 인상적이었습니다. 또한 화이트 마블 디자인이 저희 집 인테리어와 잘 어울릴 것 같아 선택하게 되었습니다.",
+          "process": "전문가분들이 정말 꼼꼼하게 시공해주셨습니다. 특히 모서리 부분과 문틀 주변 마감 처리가 매우 깔끔했습니다. 시공 과정에서 발생하는 먼지도 철저하게 관리해주셔서 좋았고, 예상했던 시공 시간보다 빨리 완료되어 만족스러웠습니다.",
+          "review": "시공한 지 2개월이 지났는데, 정말 만족스럽게 사용하고 있습니다. 아이가 넘어져도 충격이 많이 줄어들어 안심이 되고, 청소도 물걸레질 한 번으로 깔끔하게 됩니다. 화이트 마블 컬러 덕분에 집안이 한층 더 환해진 것 같아 매우 만족스럽습니다. 특히 저녁에 조명을 켰을 때 바닥이 은은하게 빛나는 느낌이 정말 좋습니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 5,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=1"
+      },
+      {
+        "id": 2,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail2.webp",
+        "title": "매트를 깔면 인테리어를 헤치진 않을까?!",
+        "siteInfo": {
+          "design": "크림 마블",
+          "size": "24평",
+          "location": "거실+복도+주방+아이방",
+          "area": "경기 분당구"
+        },
+        "customerRequests": [
+          "밝은 톤이지만 때가 잘 타지 않았으면 좋겠습니다.",
+          "충격 흡수가 잘되어 아이가 뛰어놀기에 안전했으면 좋겠습니다.",
+          "시공이 깔끔했으면 좋겠습니다.",
+          "인테리어를 해치지 않는 디자인이면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review2/1.webp",
+          "after": "../../../images/reviews/review2/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review2/3.webp",
+            "caption": "1. 기존 마루 상태 점검"
+          },
+          {
+            "image": "../../../images/reviews/review2/4.webp",
+            "caption": "2. 매트 재단 및 배치"
+          },
+          {
+            "image": "../../../images/reviews/review2/5.webp",
+            "caption": "3. 연결 부위 보강 및 시공"
+          },
+          {
+            "image": "../../../images/reviews/review2/6.webp",
+            "caption": "4. 마무리 청소"
+          }
+        ],
+        "reviewContent": {
+          "reason": "아이가 막 걸어 다니기 시작하여 안전한 바닥재가 필요했습니다. 크림 마블 디자인이 집 분위기를 망치지 않을지 걱정했으나, 오히려 따뜻해 보이는 느낌이라 바로 선택했습니다.",
+          "process": "시공팀이 와서 바닥 상태부터 꼼꼼하게 점검해주셔서 좋았습니다. 매트 맞춤 재단도 빠르고 깔끔했으며, 먼지나 소음 관리도 철저하게 해주셔서 크게 불편함 없이 시공받았습니다.",
+          "review": "생각보다 밝은 톤인데도 때가 잘 타지 않아 만족스럽습니다. 아이가 엎드려 놀아도 물티슈로 살짝 닦아주기만 하면 되고, 바닥이 폭신해 넘어져도 안심입니다. 인테리어를 전혀 해치지 않고 오히려 집이 더 포근해 보이는 것 같습니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 4,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=2"
+      },
+      {
+        "id": 3,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail3.webp",
+        "title": "넓은 공간에 어울리는 세련된 디자인",
+        "siteInfo": {
+          "design": "화이트 마블",
+          "size": "42평",
+          "location": "거실+복도+주방+아이방",
+          "area": "인천 연수구"
+        },
+        "customerRequests": [
+          "집이 넓어서 대리석 느낌이 잘 어울렸으면 좋겠습니다.",
+          "아이들이 여러 명이라 소음과 충격을 흡수해주길 바랍니다.",
+          "물걸레질로 쉽게 관리가 가능했으면 좋겠습니다.",
+          "오래 봐도 질리지 않는 디자인이면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review3/1.webp",
+          "after": "../../../images/reviews/review3/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review3/3.webp",
+            "caption": "1. 구석진 곳까지 먼지 제거"
+          },
+          {
+            "image": "../../../images/reviews/review3/4.webp",
+            "caption": "2. 시공 구간에 맞춰 매트 재단"
+          },
+          {
+            "image": "../../../images/reviews/review3/5.webp",
+            "caption": "3. 직선·곡선 부분 맞춤 시공"
+          },
+          {
+            "image": "../../../images/reviews/review3/6.webp",
+            "caption": "4. 매트 틈새 보강 및 마감"
+          }
+        ],
+        "reviewContent": {
+          "reason": "큰 평수라 매트를 깔면 분위기가 칙칙해질까 걱정했는데, 화이트 마블 디자인이 넓은 공간에도 잘 어울릴 것 같아 선택했습니다.",
+          "process": "시공하는 동안 전문가분들이 정말 깔끔하게 진행해주셨습니다. 매트 단차가 거의 느껴지지 않아 좋았고, 두께도 적당하여 층간소음이 많이 줄어든 느낌입니다.",
+          "review": "넓은 거실과 주방을 함께 시공했더니 집 전체가 한층 세련되어 보입니다. 아이들이 뛰는 소리도 많이 줄어들어 이웃과의 마찰 걱정도 덜했습니다. 청소도 간편해서 매우 만족스럽습니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 5,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=3"
+      },
+      {
+        "id": 4,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail4.webp",
+        "title": "차분한 분위기가 되었어요",
+        "siteInfo": {
+          "design": "크림 마블",
+          "size": "29평",
+          "location": "거실+복도+주방+아이방",
+          "area": "부산 해운대구"
+        },
+        "customerRequests": [
+          "집에 들어오는 햇빛이 강해서 반사광이 너무 세지 않았으면 좋겠습니다.",
+          "바닥에 먼지가 많은데, 청소가 편리했으면 좋겠습니다.",
+          "차분하고 따뜻한 느낌을 원합니다.",
+          "시공 시간이 오래 걸리지 않았으면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review4/1.webp",
+          "after": "../../../images/reviews/review4/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review4/3.webp",
+            "caption": "1. 집기 이동 및 보호"
+          },
+          {
+            "image": "../../../images/reviews/review4/4.webp",
+            "caption": "2. 필요한 부분만 정교하게 매트 재단"
+          },
+          {
+            "image": "../../../images/reviews/review4/5.webp",
+            "caption": "3. 시공 후 높이·단차 확인"
+          },
+          {
+            "image": "../../../images/reviews/review4/6.webp",
+            "caption": "4. 시공 마무리 및 정리"
+          }
+        ],
+        "reviewContent": {
+          "reason": "햇볕이 잘 들어오는 집이라 바닥이 너무 반짝이면 눈부실까 걱정이었습니다. 은은한 크림 톤이면서 안전성을 갖춘 매트를 찾다가 시공을 결정했습니다.",
+          "process": "전문가분들이 오셔서 가구를 보호하고, 매트를 정교하게 재단해주셨습니다. 예상보다 시공 시간이 짧아 편리했습니다.",
+          "review": "깔고 나니 확실히 분위기가 부드러워졌습니다. 물건이 떨어져도 소리가 덜 울려서 안정감이 있고, 물걸레질로 금방 청소할 수 있어 매우 편합니다. 아늑한 느낌이 들어서 만족합니다."
+        },
+        "ratings": {
+          "design": 4,
+          "quality": 5,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=4"
+      },
+      {
+        "id": 5,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail5.webp",
+        "title": "베란다에 깔아도 너무 예뻐요!",
+        "siteInfo": {
+          "design": "화이트 마블",
+          "size": "35평",
+          "location": "베란다",
+          "area": "대구 수성구"
+        },
+        "customerRequests": [
+          "베란다에 습기가 많아 곰팡이 걱정이 없었으면 좋겠습니다.",
+          "바닥이 차가워서 아이가 잘 놀지 못했는데, 좀 더 따뜻했으면 합니다.",
+          "쉽게 변색되지 않는 재질이면 좋겠습니다.",
+          "얇아 보여도 내구성이 뛰어났으면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review5/1.webp",
+          "after": "../../../images/reviews/review5/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review5/3.webp",
+            "caption": "1. 베란다 습기 확인 및 건조"
+          },
+          {
+            "image": "../../../images/reviews/review5/4.webp",
+            "caption": "2. 매트 크기와 공간 측정"
+          },
+          {
+            "image": "../../../images/reviews/review5/5.webp",
+            "caption": "3. 가장자리 맞춤 시공"
+          },
+          {
+            "image": "../../../images/reviews/review5/6.webp",
+            "caption": "4. 최종 마감 및 통풍 확인"
+          }
+        ],
+        "reviewContent": {
+          "reason": "베란다를 아이 놀이공간으로 활용하고 싶었는데, 날씨 변화로 인한 습기와 곰팡이가 걱정이었습니다. TPU 소재가 습기에 강하다고 해서 화이트 마블 디자인으로 시공을 결정했습니다.",
+          "process": "먼저 베란다를 완전히 건조시킨 후 매트를 재단해주셔서 시공이 깔끔했습니다. 모서리 부분도 잘 마감해주셔서 만족스러웠습니다.",
+          "review": "생각했던 것보다 한층 따뜻해져서 아이가 베란다에서도 잘 놉니다. 물이 흘러도 간단히 닦을 수 있어 관리가 편하고, 고급스러운 대리석 느낌도 제대로 살아납니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 5,
+          "service": 4
+        },
+        "link": "/pages/review/review-detail.html?id=5"
+      },
+      {
+        "id": 6,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail6.webp",
+        "title": "아이방 분위기를 따뜻하게 바꿨어요",
+        "siteInfo": {
+          "design": "베이지 코튼",
+          "size": "28평",
+          "location": "아이방",
+          "area": "서울 마포구"
+        },
+        "customerRequests": [
+          "아이방이라 파스텔 톤으로 화사했으면 좋겠습니다.",
+          "아이 장난감 놀이를 바닥에서 편하게 할 수 있었으면 좋겠습니다.",
+          "바닥에 긁힘이나 얼룩이 쉽게 생기지 않았으면 좋겠습니다.",
+          "방음 효과도 어느 정도 있었으면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review6/1.webp",
+          "after": "../../../images/reviews/review6/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review6/3.webp",
+            "caption": "1. 방 크기에 맞춰 매트 패턴 계획"
+          },
+          {
+            "image": "../../../images/reviews/review6/4.webp",
+            "caption": "2. 구석진 곳 매트 재단"
+          },
+          {
+            "image": "../../../images/reviews/review6/5.webp",
+            "caption": "3. 깔끔한 마감 처리"
+          },
+          {
+            "image": "../../../images/reviews/review6/6.webp",
+            "caption": "4. 시공 후 자재 확인"
+          }
+        ],
+        "reviewContent": {
+          "reason": "아이방을 좀 더 따뜻하고 화사한 분위기로 바꾸고 싶었습니다. 베이지 코튼이 부드러운 느낌이고, 아이가 넘어져도 다치지 않도록 폭신한 매트가 필요했습니다.",
+          "process": "시공팀이 바닥 상태를 먼저 확인하고, 문제될 부분이 없는지 꼼꼼하게 살펴주셔서 안심이 되었습니다. 시공 시간도 짧았고, 먼지도 거의 없었습니다.",
+          "review": "방 전체가 부드러운 톤으로 바뀌어 아이가 매우 좋아합니다. 긁힘도 잘 생기지 않고, 장난감을 떨어뜨려도 소리가 크게 나지 않아 방음에도 도움되는 것 같습니다. 관리가 쉬워서 만족스럽습니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 5,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=6"
+      },
+      {
+        "id": 7,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail7.webp",
+        "title": "크림 마블 덕분에 집안이 화사해졌어요",
+        "siteInfo": {
+          "design": "크림 마블",
+          "size": "30평",
+          "location": "거실",
+          "area": "경기 고양시"
+        },
+        "customerRequests": [
+          "아이들이 밟고 다녀도 미끄럼이 적었으면 좋겠습니다.",
+          "바닥이 너무 어둡지 않도록 부탁드립니다.",
+          "오래 사용해도 변형이 없는 재질이면 좋겠습니다.",
+          "시공 비용이 합리적이면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review7/1.webp",
+          "after": "../../../images/reviews/review7/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review7/3.webp",
+            "caption": "1. 거실 청소 및 바닥 균열 체크"
+          },
+          {
+            "image": "../../../images/reviews/review7/4.webp",
+            "caption": "2. 매트 재단 및 시공 전 자리 잡기"
+          },
+          {
+            "image": "../../../images/reviews/review7/5.webp",
+            "caption": "3. 본 시공 및 연결 부위 확인"
+          },
+          {
+            "image": "../../../images/reviews/review7/6.webp",
+            "caption": "4. 전체 마감 점검"
+          }
+        ],
+        "reviewContent": {
+          "reason": "집 안을 좀 더 밝게 만들고 싶어 크림 마블 색상을 고려했는데, 미끄럼 방지가 필요해 시공 전 여러 제품을 비교했습니다. 결국 안전성과 디자인을 모두 갖춘 제품을 선택하게 되었습니다.",
+          "process": "생각보다 시공이 빨리 끝나서 만족스러웠습니다. 크림 톤이라 시공 시 이음새가 잘 보이지 않도록 꼼꼼하게 마감해주셨습니다.",
+          "review": "시공 후 거실이 훨씬 밝아졌고, 아이들도 만족스러워합니다. 미끄럼이 거의 없어 안심되고, 물걸레질로 쉽게 청소할 수 있어 생활이 편해졌습니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 4,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=7"
+      },
+      {
+        "id": 8,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail8.webp",
+        "title": "북유럽 스타일 인테리어에 찰떡",
+        "siteInfo": {
+          "design": "쉘 그레이",
+          "size": "40평",
+          "location": "거실+복도",
+          "area": "경남 창원시"
+        },
+        "customerRequests": [
+          "심플한 인테리어와 잘 어울리는 컬러가 필요합니다.",
+          "무광 느낌으로 세련된 분위기를 내고 싶습니다.",
+          "반려동물이 있어 긁힘에 강했으면 좋겠습니다.",
+          "습기에 강해 곰팡이 걱정이 없었으면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review8/1.webp",
+          "after": "../../../images/reviews/review8/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review8/3.webp",
+            "caption": "1. 바닥 상태 체크 및 애완동물 영향 고려"
+          },
+          {
+            "image": "../../../images/reviews/review8/4.webp",
+            "caption": "2. 시공 구역 측정 및 매트 자르기"
+          },
+          {
+            "image": "../../../images/reviews/review8/5.webp",
+            "caption": "3. 정확한 위치에 맞춰 부착"
+          },
+          {
+            "image": "../../../images/reviews/review8/6.webp",
+            "caption": "4. 시공 후 전체 청소 및 통풍"
+          }
+        ],
+        "reviewContent": {
+          "reason": "집을 북유럽 스타일로 꾸몄는데, 그레이 톤 바닥재가 필요했습니다. 쉘 그레이가 고급스럽고 반려동물이 있어도 긁힘 걱정이 적다고 들어서 시공하게 되었습니다.",
+          "process": "바닥 면이 넓었는데 시공팀이 신속하고 깔끔하게 진행해주셨습니다. 반려동물이 돌아다니는 상황에서도 안전하게 일해주셔서 좋았습니다.",
+          "review": "무광 그레이 톤이라 집 전체가 차분하고 세련된 분위기가 납니다. 가구와도 잘 어울리고, 반려동물이 뛰어다녀도 자국이나 긁힘이 거의 없어 만족합니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 5,
+          "service": 4
+        },
+        "link": "/pages/review/review-detail.html?id=8"
+      },
+      {
+        "id": 9,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail9.webp",
+        "title": "아이들이 뛰어놀기 좋아요!",
+        "siteInfo": {
+          "design": "페브릭 그레이",
+          "size": "25평",
+          "location": "거실+아이방",
+          "area": "서울 서초구"
+        },
+        "customerRequests": [
+          "아이들 방과 거실을 함께 사용하는 공간이라 활용도가 높아야 합니다.",
+          "소음이 적어 층간소음을 최소화했으면 좋겠습니다.",
+          "미끄럼 방지가 잘 되어 아이들이 안전하게 뛰어놀았으면 좋겠습니다.",
+          "오염이 생겨도 쉽게 닦을 수 있으면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review9/1.webp",
+          "after": "../../../images/reviews/review9/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review9/3.webp",
+            "caption": "1. 아이방과 거실 공간 분리 측정"
+          },
+          {
+            "image": "../../../images/reviews/review9/4.webp",
+            "caption": "2. 매트 재단 및 놓아보기"
+          },
+          {
+            "image": "../../../images/reviews/review9/5.webp",
+            "caption": "3. 내구성 보강 테이핑"
+          },
+          {
+            "image": "../../../images/reviews/review9/6.webp",
+            "caption": "4. 최종 모서리 부분 점검"
+          }
+        ],
+        "reviewContent": {
+          "reason": "아이들이 둘이라 뛰어노는 소리가 신경 쓰였는데, 페브릭 그레이 매트의 충격 흡수율이 좋다는 점이 마음에 들었습니다.",
+          "process": "시공 전후로 소음을 비교해보고 전문가분들이 꼼꼼하게 시공해주셔서 신뢰가 갔습니다. 아이들이 시공 과정을 신기해하더군요.",
+          "review": "깔아놓으니 확실히 뛰는 소리가 많이 줄었고, 미끄러지지 않아 아이들이 안전하게 놀 수 있어 좋습니다. 페브릭 느낌이 은은해서 인테리어와도 잘 어울리고, 먹을 걸 흘려도 간단히 닦아낼 수 있어 편리합니다."
+        },
+        "ratings": {
+          "design": 4,
+          "quality": 5,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=9"
+      },
+      {
+        "id": 10,
+        "thumbnail": "../../images/reviews/review-thumbnail/review-thumbnail10.webp",
+        "title": "대리석 느낌 그대로, 청소도 편해요",
+        "siteInfo": {
+          "design": "화이트 마블",
+          "size": "38평",
+          "location": "거실+주방",
+          "area": "부산 수영구"
+        },
+        "customerRequests": [
+          "대리석 분위기를 내고 싶지만, 부담 없는 방법을 찾고 있습니다.",
+          "주방 오염이 많아 관리가 쉬웠으면 좋겠습니다.",
+          "아이가 있으니 미끄럼 방지가 필요합니다.",
+          "장기적으로 유지하기 편한 바닥재였으면 좋겠습니다."
+        ],
+        "beforeAfter": {
+          "before": "../../../images/reviews/review10/1.webp",
+          "after": "../../../images/reviews/review10/2.webp"
+        },
+        "constructionProcess": [
+          {
+            "image": "../../../images/reviews/review10/3.webp",
+            "caption": "1. 주방 타일·거실 바닥 상태 확인"
+          },
+          {
+            "image": "../../../images/reviews/review10/4.webp",
+            "caption": "2. 바닥 균형 맞춤 및 매트 재단"
+          },
+          {
+            "image": "../../../images/reviews/review10/5.webp",
+            "caption": "3. 구역별 시공 및 오염 방지 처리"
+          },
+          {
+            "image": "../../../images/reviews/review10/6.webp",
+            "caption": "4. 전체 마감 점검 및 정리"
+          }
+        ],
+        "reviewContent": {
+          "reason": "대리석 바닥은 가격과 관리 면에서 부담이 되었는데, TPU 매트 화이트 마블 디자인이 비슷한 분위기를 낼 수 있어 시공을 결심했습니다.",
+          "process": "주방과 거실을 이어서 시공해야 했는데, 전문가분들이 오염 가능성을 미리 대비하고 시공해주셔서 깔끔했습니다.",
+          "review": "언뜻 보면 진짜 대리석처럼 보이고, 물이나 음식물을 흘려도 바로 닦으면 깨끗해집니다. 미끄럼도 적고 아이들이 뛰어놀아도 안전해서 매우 만족합니다."
+        },
+        "ratings": {
+          "design": 5,
+          "quality": 5,
+          "service": 5
+        },
+        "link": "/pages/review/review-detail.html?id=10"
+      }
+    ]
+  }
+  

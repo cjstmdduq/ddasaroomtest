@@ -1,0 +1,231 @@
+/* ============================= */
+/* About 페이지 스타일 */
+/* ============================= */
+
+/* 공통 컨테이너 스타일 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+    width: 100%;
+}
+
+.about-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/main-1.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 소개 섹션 */
+.intro-section {
+    padding: 6rem 0;
+    background-color: var(--white-100);   
+}
+
+.intro-content {
+    text-align: left;
+    max-width: 1200px;    
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--gray-200);
+}
+
+.intro-highlight {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    color: var(--gray-200);
+}
+
+/* 이미지 슬라이드 섹션 */
+.slide-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 4rem 0;
+    background-color: var(--white-100);
+}
+
+.slide-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.sliding-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../images/main-2.webp');
+    background-size: cover;
+    background-position: center;
+    animation: slideLeft 30s linear infinite;
+}
+
+@keyframes slideLeft {
+    0% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
+}
+
+/* 두 번째 이미지 슬라이드 섹션 */
+.slide-section2 {
+    width: 100%;
+    overflow: hidden;
+    padding: 4rem 0;
+    background-color: var(--white-100);
+}
+
+.slide-container2 {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.sliding-image2 {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../images/slide-4.webp');
+    background-size: cover;
+    background-position: center;
+    animation: slideLeft 30s linear infinite;
+}
+
+/* 특징 섹션 */
+.features-section {
+    padding: 6rem 0;
+    background-color: var(--white-100);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--gray-200);
+    margin-bottom: 4rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue-200);
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 1.6rem;
+    color: var(--gray-200);
+    line-height: 1.6;
+}
+
+/* 마지막 메시지 섹션 */
+.final-message {
+    padding: 6rem 0;
+    background-color: var(--white-100);
+}
+
+.message-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.message-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: 600;
+    color: var(--gray-200);
+    margin-bottom: 2rem;
+}
+
+.message-text:last-child {
+    margin-bottom: 0;
+}
+
+/* 로고 섹션 */
+.logo-section {
+    padding: 4rem 0;
+    background-color: var(--white-100);
+}
+
+.logo-content {
+    text-align: center;
+}
+
+.final-logo {
+    width: 300px;
+    height: auto;   
+    margin: 60px auto;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+
+    .intro-highlight {
+        font-size: 2.0rem;
+    }
+
+    .section-title {
+        font-size: 2.0rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 1.2rem;
+    }
+
+    .message-text {
+        font-size: 1.0rem;
+    }
+
+    .final-logo {
+        width: 200px;
+    }
+}

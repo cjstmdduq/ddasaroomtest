@@ -1,0 +1,310 @@
+/* 리뷰 상세 페이지 전체 레이아웃 */
+.review-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 헤더 영역 */
+.review-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* 리뷰 상세 페이지 제목(기우기 방식으로 변수명변경..ㅠㅠ) */
+.review-detail-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+}
+
+.review-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 현장 정보 테이블 */
+.site-info {
+    margin-bottom: 3rem;
+}
+
+.site-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-table th,
+.info-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.info-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    width: 120px;
+    color: #333;
+}
+
+/* 고객 요청사항 */
+.customer-requests {
+    margin-bottom: 3rem;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.customer-requests h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.request-list {
+    list-style: none;
+    padding: 0;
+}
+
+.request-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.request-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4A90E2;
+}
+
+/* 비포 애프터 영역 */
+.before-after {
+    margin-bottom: 3rem;
+}
+
+.before-after h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.comparison-slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.before-container,
+.after-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.before-container {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    will-change: transform;
+}
+
+.after-container {
+    right: 0;
+    width: 100%;
+}
+
+.before-container img,
+.after-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-handle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #fff;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+.slider-handle:after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* 시공 과정 */
+.construction-process {
+    margin-bottom: 3rem;
+}
+
+.process-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.process-item {
+    margin: 0;
+}
+
+.process-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.process-item figcaption {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 후기 본문 */
+.review-content {
+    margin-bottom: 3rem;
+}
+
+.editor-section {
+    margin-bottom: 2rem;
+}
+
+.editor-section h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.editor-section p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* 만족도 평가 */
+.review-rating {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.rating-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.rating-item .label {
+    color: #333;
+    font-weight: 500;
+    min-width: 80px;
+}
+
+.stars {
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+}
+
+.stars .fa-star {
+    margin-right: 2px;
+}
+
+.stars .fa-star.inactive {
+    color: #e0e0e0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .review-detail {
+        padding: 1rem;
+    }
+
+    .review-detail-title {
+        font-size: 1.5rem;
+    }
+
+    .info-table {
+        display: block;
+    }
+
+    .info-table tr {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .comparison-slider {
+        height: 300px;
+    }
+
+    .rating-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 애니메이션 효과 */
+.review-card,
+.process-item,
+.rating-item {
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover,
+.process-item:hover {
+    transform: translateY(-5px);
+}
+
+/* 접근성 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/* 섹션 제목 스타일 - 더 구체적인 선택자 사용 */
+.review-detail section h2 {
+    color: #333;
+    margin: 0.8rem 0;
+    padding-bottom: 0.5rem;
+    /* border-bottom: 2px solid #eee; */
+}

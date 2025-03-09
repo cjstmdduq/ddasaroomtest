@@ -1,0 +1,53 @@
+/* ============================= */
+/* 푸터 스타일 */
+/* ============================= */
+.footer {
+    background-color: var(--gray-200);
+    color: var(--white-100);
+    padding: 4rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.footer-cs {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-info span {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-info b {
+    color: var(--white-100);
+    display: block;
+    margin: 1rem 0;
+}
+
+.footer-copy {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.biz-check {
+    color: var(--white-100);
+    text-decoration: none;
+}
+
+.biz-check:hover {
+    text-decoration: underline;
+}

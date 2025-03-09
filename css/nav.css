@@ -1,0 +1,242 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* ============================= */
+/* 헤더 스타일 */
+/* ============================= */
+.header {
+    background-color: var(--white-100);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--gray-200);
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.nav-menu>li {
+    position: relative;
+}
+
+.nav-menu>li>a {
+    text-decoration: none;
+    color: var(--gray-200);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-menu>li:hover>a {
+    color: var(--blue-200);
+}
+
+/* ============================= */
+/* 드롭다운 메뉴 */
+/* ============================= */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white-100);
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-menu>li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown li {
+    list-style: none;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: var(--gray-200);
+    padding: 0.75rem 1.5rem;
+    display: block;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown a:hover {
+    background: var(--blue-100);
+    color: var(--blue-200);
+}
+
+/* ============================= */
+/* 네비게이션 버튼 스타일 */
+/* ============================= */
+.nav-menu .nav-button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* 개인 견적 버튼 스타일 */
+.nav-menu .nav-button[href*="individual"] {
+    background-color: var(--blue-200);
+    color: var(--white-100);
+}
+
+.nav-menu .nav-button[href*="individual"]:hover {
+    background-color: var(--blue-100);
+    color: var(--blue-200);
+}
+
+/* 기관 견적 버튼 스타일 */
+.nav-menu .nav-button[href*="institution"] {
+    background-color: var(--blue-100);
+    color: var(--blue-200);
+}
+
+.nav-menu .nav-button[href*="institution"]:hover {
+    background-color: var(--blue-50);
+    color: var(--blue-300);
+}
+
+/* ============================= */
+/* 모바일 메뉴 스타일 */
+/* ============================= */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--gray-200);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+/* ============================= */
+/* 반응형 디자인 */
+/* ============================= */
+
+@media (max-width: 1024px) {
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - 80px);
+        background: var(--white-100);
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        gap: 1rem;
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu > li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-menu > li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-menu > li > a {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8f9fa;
+        width: 100%;
+        margin: 0;
+        display: none;
+        border-radius: 0;
+    }
+
+    .dropdown.show {
+        display: block;
+    }
+
+    .dropdown li a {
+        padding-left: 2rem;
+        font-size: 1rem;
+    }
+
+    .nav-menu .nav-button {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    /* 모바일에서 드롭다운 표시기 추가 */
+    .nav-menu > li:has(.dropdown) > a::after {
+        content: '\f107';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        margin-left: 0.5rem;
+        float: right;
+    }
+
+    .nav-menu > li:has(.dropdown) > a.active::after {
+        content: '\f106';
+    }
+}

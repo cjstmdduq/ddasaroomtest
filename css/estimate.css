@@ -1,0 +1,138 @@
+/* ============================= */
+/* 예상견적 섹션 스타일 */
+/* ============================= */
+.estimate-section {
+    padding: 3rem 0;
+    background-color: var(--white-100);
+}
+
+/* 테이블 그리드 레이아웃 */
+.estimate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* 타입 정보 스타일 */
+.type-info {
+    margin-bottom: 1rem;
+}
+
+.type-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gray-200);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.type-subtitle {
+    font-size: 1.2rem;
+    color: var(--gray-200);
+    opacity: 0.7;
+    text-align: left;
+}
+
+/* 테이블 스타일 */
+.estimate-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white-100);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    table-layout: fixed;
+    margin-bottom: 2rem;
+}
+
+.estimate-table th,
+.estimate-table td {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    height: 3.5rem;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+
+.estimate-table th {
+    background: var(--blue-200);
+    color: var(--white-100);
+    font-weight: 600;
+}
+
+.estimate-table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--gray-200);
+}
+
+.estimate-table tr:last-child td {
+    border-bottom: none;
+}
+
+.estimate-table tr:hover td {
+    background: rgba(51, 154, 240, 0.05);
+}
+
+.table-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--gray-200);
+    opacity: 0.6;
+    text-align: right;
+}
+
+/* 테이블 컨테이너 스타일 */
+.estimate-table-container {
+    margin: 0 auto;
+    background: var(--white-100);
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1024px) {
+    .estimate-container {
+        grid-template-columns: 1fr;
+        max-width: 580px;
+    }
+
+    .estimate-section {
+        padding: 2rem 0;
+    }
+
+    .type-title {
+        font-size: 1.5rem;
+    }
+
+    .estimate-table th,
+    .estimate-table td {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .type-title {
+        font-size: 1.8rem;
+    }
+
+    .type-subtitle {
+        font-size: 1rem;
+    }
+
+    .estimate-table th,
+    .estimate-table td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .table-note {
+        font-size: 0.85rem;
+    }
+}

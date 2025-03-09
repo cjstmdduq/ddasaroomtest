@@ -1,0 +1,118 @@
+
+
+
+.inquiry-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.inquiry-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.inquiry-card {
+    background: white;
+    /* border-radius: 20px; */
+    padding: 40px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .inquiry-card:hover {
+    transform: translateY(-10px);
+} */
+
+.inquiry-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0)); */
+    z-index: 1;
+}
+
+.inquiry-content {
+    position: relative;
+    z-index: 2;
+}
+
+.inquiry-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.inquiry-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.inquiry-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.inquiry-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.individual .inquiry-button {
+    background-color: var(--blue-200);
+    color: var(--white-100);
+}
+
+.institution .inquiry-button {
+    background-color: var(--blue-100);
+    color: var(--blue-200);
+}
+
+.individual .inquiry-button:hover {
+    background-color: var(--blue-100);
+    color: var(--blue-200);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.institution .inquiry-button:hover {
+    background-color: var(--blue-50);
+    color: var(--blue-300);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .inquiry-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .inquiry-card {
+        padding: 30px;
+    }
+    
+    .inquiry-title {
+        font-size: 2rem;
+    }
+    
+    .inquiry-subtitle {
+        font-size: 1.5rem;
+    }
+}
